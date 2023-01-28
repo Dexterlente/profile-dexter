@@ -15,14 +15,14 @@ const LandingSection = () => (
       <VStack spacing={4} alignItems="center">
         <Avatar
           src="https://avatars.githubusercontent.com/u/103068534?s=400&u=e9f70456701a7db7b50fd0f3d4ff9da3475b69c1&v=4"
-          size="3xl"
+          size="2xl"
           name="Dexter"
         />
         <Heading as="h4" size="xl" noOfLines={1}>
         Hello, I am Dexter Lente!
         </Heading>
           <div className="flex justify-center text-3xl">
-                    <div>
+                    <div className="font-bold text-yellow-700">
                     <TypeAnimation
                   sequence={[
                     'Front', // Types 'One'
@@ -30,9 +30,7 @@ const LandingSection = () => (
                     'Back', // Deletes 'One' and types 'Two'
                     2000,
                   ]}
-                  wrapper="div"
-                  cursor={true} repeat={Infinity}
-                  speed="50"
+                  cursor={true} repeat={Infinity}speed="50"
                   /> 
                   </div>   
                 <div>
