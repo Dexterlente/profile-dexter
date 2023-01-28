@@ -1,13 +1,9 @@
 import React from "react";
 import { Avatar, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
+import { TypeAnimation } from 'react-type-animation';
 
-const greeting = "Hello, I am Dexter!";
-const bio1 = "A frontend developer";
-const bio2 = "specialised in React";
 
-// Implement the UI for the LandingSection component according to the instructions.
-// Use a combination of Avatar, Heading and VStack components.
 const LandingSection = () => (
   <FullScreenSection
     justifyContent="center"
@@ -19,21 +15,32 @@ const LandingSection = () => (
       <VStack spacing={4} alignItems="center">
         <Avatar
           src="https://avatars.githubusercontent.com/u/103068534?s=400&u=e9f70456701a7db7b50fd0f3d4ff9da3475b69c1&v=4"
-          size="2xl"
+          size="3xl"
           name="Dexter"
         />
-        <Heading as="h4" size="md" noOfLines={1}>
-          {greeting}
+        <Heading as="h4" size="xl" noOfLines={1}>
+        Hello, I am Dexter Lente!
         </Heading>
+          <div className="flex justify-center text-3xl">
+                    <div>
+                    <TypeAnimation
+                  sequence={[
+                    'Front', // Types 'One'
+                    2000, // Waits 1s
+                    'Back', // Deletes 'One' and types 'Two'
+                    2000,
+                  ]}
+                  wrapper="div"
+                  cursor={true} repeat={Infinity}
+                  speed="50"
+                  /> 
+                  </div>   
+                <div>
+                  - end developer
+                </div>
+        </div>
       </VStack>
-      <VStack spacing={6}>
-        <Heading as="h1" size="3xl" noOfLines={1}>
-          {bio1}
-        </Heading>
-        <Heading as="h1" size="3xl" noOfLines={1}>
-          {bio2}
-        </Heading>
-      </VStack>
+
     </VStack>
   </FullScreenSection>
 );
