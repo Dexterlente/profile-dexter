@@ -31,6 +31,7 @@ const LandingSection = () => (
           {bio1}
         </Heading>
         <Heading as="h1" size="3xl" noOfLines={1}>
+          {bio2}
         </Heading>
       </VStack>
     </VStack>
