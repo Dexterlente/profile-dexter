@@ -34,7 +34,7 @@ const LandingSection = () => (
                   /> 
                   </div>   
                 <div>
-                  - end developer
+                  - end Developer
                 </div>
         </div>
       </VStack>
