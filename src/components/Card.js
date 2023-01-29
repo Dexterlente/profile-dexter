@@ -3,7 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-const Card = ({ title, description, imageSrc }) => {
+const Card = ({ title, description, imageSrc, gitLink }) => {
+
+  const handleClick = () => {
+    window.location.href = gitLink;
+  }
 
   return (
     <VStack
@@ -23,8 +27,10 @@ const Card = ({ title, description, imageSrc }) => {
           {description}
         </Text>
         <HStack spacing={2} alignItems="center">
-          <p>See more</p>
-          <FontAwesomeIcon icon={faArrowRight} size="1x" />
+          <a href={ gitLink }>
+            <p onClick={handleClick}>See github repo
+            <FontAwesomeIcon icon={faArrowRight} className="pl-2" size="1x" /></p>
+            </a>
         </HStack>
       </VStack>
     </VStack>

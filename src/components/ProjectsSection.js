@@ -5,28 +5,50 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "News Website",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+      `News Website boilerplate front end designs can be
+      edited according to ones specification.
+      Front end is being rendered using vanilla javascript
+      and using fetch for backend api rendering.
+      Django framework is being used for the backend`,
     getImageSrc: () => require("../images/newswebsite.png"),
+    gitLink: "https://github.com/Dexterlente/project",
   },
   {
-    title: "React Infinite Scroll",
+    title: "Social Media",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      `An emailing system developed in python django for
+      the backend and vanilla javascript for the front end.
+      User can visit their Inbox and sent emails, or
+      archive emails.`,
     getImageSrc: () => require("../images/socialmedia.png"),
+    gitLink: "https://github.com/Dexterlente/social",
   },
   {
-    title: "Photo Gallery",
+    title: "Notes",
     description:
       "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
     getImageSrc: () => require("../images/notes.png"),
+    gitLink: "https://github.com/Dexterlente/react-django-notesapplication",
   },
   {
-    title: "Event planner",
+    title: "Mail",
+    description:
+    `An emailing system developed in python django for
+    the backend and vanilla javascript for the front end.
+    User can visit their Inbox and sent emails, or
+    archive emails.
+    `,
+    getImageSrc: () => require("../images/email.png"),
+    gitLink: "https://github.com/Dexterlente/mail",
+  },
+  {
+    title: "Ecommerce",
     description:
       "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/email.png"),
+    getImageSrc: () => require("../images/ecommerce.png"),
+    gitLink: "https://github.com/Dexterlente/ecommerce",
   },
 ];
 
@@ -53,6 +75,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            gitLink={project.gitLink}
           />
         ))}
       </Box>
