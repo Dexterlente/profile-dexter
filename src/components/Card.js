@@ -28,8 +28,8 @@ const Card = ({ title, description, imageSrc, gitLink }) => {
         </Text>
         <HStack spacing={2} alignItems="center">
           <a href={ gitLink }>
-            <p onClick={handleClick}>See github repo
-            <FontAwesomeIcon icon={faArrowRight} className="pl-2" size="1x" /></p>
+            <p onClick={handleClick} >See github repo
+            <FontAwesomeIcon icon={faArrowRight} className="pl-2 hover:scale-150" size="1x" /></p>
             </a>
         </HStack>
       </VStack>

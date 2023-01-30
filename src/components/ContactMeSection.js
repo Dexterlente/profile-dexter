@@ -89,10 +89,10 @@ const ContactMeSection = () => {
               </FormControl>
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" {...formik.getFieldProps("type")}>
+                <Select className='text-gray-300' id="type" name="type" {...formik.getFieldProps("type")}>
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
-                    Open source consultancy session
+                   Job offering
                   </option>
                   <option value="other">Other</option>
                 </Select>
@@ -104,7 +104,7 @@ const ContactMeSection = () => {
                 <Textarea
                   id="comment"
                   name="comment"
-                  height={250}
+                  height={250} placeholder="No backend random generation on submit"
                   {...formik.getFieldProps("comment")}
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>

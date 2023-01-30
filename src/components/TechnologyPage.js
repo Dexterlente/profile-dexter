@@ -4,9 +4,9 @@ import { VStack, HStack, Center, Square,  } from '@chakra-ui/react'
 
 
 const TechnologyPage = () => {
-  return ( <FullScreenSection backgroundColor="black">
+  return ( <FullScreenSection backgroundColor="black" className="h-screen">
             <VStack spacing='40px' id='techstack-section'>
-                <h1 className='text-white text-5xl mt-10 font-bold'>Tech Stack</h1>
+                <h1 className='text-white text-5xl mt-10 mb-32 font-bold'>Tech Stack</h1>
             <HStack spacing='100px' mt="100px">
                 <Center w='130px' h='130px'>
                 <div className="relative group">
